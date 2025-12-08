@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 //Components
 import { Header } from "@/components/ui";
 
