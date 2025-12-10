@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 //Components
-import { Header } from "@/components/layout";
+import { Header, Footer } from "@/components/layout";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -33,6 +33,7 @@ export default function RootLayout({
       >
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
