@@ -13,7 +13,7 @@ type Props = {
 
 export default function WorksSection({ featuredWorks }: Props) {
   return (
-    <section id="works" className="w-full mt-16 md:mt-24">
+    <section id="works" className="w-full mt-16 md:mt-24 px-4">
       <SectionHeading headingText="Works" />
       <WorkCardList featuredWorks={featuredWorks} />
     </section>
