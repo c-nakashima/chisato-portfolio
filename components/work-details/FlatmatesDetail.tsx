@@ -5,6 +5,7 @@ import { WorkDetailHero } from "@/components/work-details";
 import {
   PersonaSection,
   OverviewSection,
+  ProblemStatementSection,
 } from "@/components/work-details/flatmates";
 
 // Basic Data for flatmates
@@ -16,6 +17,7 @@ export default function FlatmatesDetail() {
       <WorkDetailHero featuredWork={flatmateWork} />
       <OverviewSection />
       <PersonaSection />
+      <ProblemStatementSection />
     </article>
   );
 }
