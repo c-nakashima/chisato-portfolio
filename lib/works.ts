@@ -4,7 +4,7 @@ import type { Work } from "@/types/work";
 export const featuredWorks: Work[] = [
   {
     slug: "flatmates",
-    title: "UX Case Study :Flatmates Revised Prototype",
+    title: "UX Case Study: Flatmates Revised Prototype",
     subtitle: "RMIT Online presentation work",
     roles: ["UX Research", "Prototyping"],
     term: "Mar 2023 - May 2023",
