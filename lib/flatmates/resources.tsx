@@ -28,7 +28,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
             href="https://www.dffh.vic.gov.au/publications/past-rental-reports"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-neutral-800 inline-flex items-center gap-1"
+            className="underline text-indigo-700 hover:text-indigo-500 inline-flex items-center gap-1"
           >
             View source
             <span aria-hidden>↗</span>
@@ -36,6 +36,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
         </p>
       </div>
     ),
+    defaultOpen: false,
   },
   {
     title:
@@ -59,7 +60,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
             href="https://www.dffh.vic.gov.au/publications/victorian-utility-consumption-household-surveyt"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-neutral-800 inline-flex items-center gap-1"
+            className="underline text-indigo-700 hover:text-indigo-500 inline-flex items-center gap-1"
           >
             View source
             <span aria-hidden>↗</span>
@@ -67,10 +68,11 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
         </p>
       </div>
     ),
+    defaultOpen: false,
   },
 ]
 
-// -- Living Cost data
+// -- Web Review data
 export const desktopResearchWebReviewData: AccordionItem[] = [
   {
     title: 'Reviews on the Web',
@@ -86,18 +88,21 @@ export const desktopResearchWebReviewData: AccordionItem[] = [
           <li>😵‍💫 Unreliable</li>
         </ul>
         <p className="text-sm text-neutral-500">
-          Researchd in Reddit, Productreview.com
+          Researchd in Reddit, Productreview.com{' '}
           <a
             href="https://docs.google.com/spreadsheets/d/1nHeQITd0MsAimj1lIKM2TzPqrt5fGwoAIt-8cN9OcE4/edit#gid=0"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline hover:text-neutral-800 inline-flex items-center gap-1"
+            className="underline text-indigo-700 hover:text-indigo-500  inline-flex items-center gap-1"
           >
             Gathered Reviews and comments
-            <span aria-hidden>↗</span>
+            <span aria-hidden className="text-xs">
+              ↗
+            </span>
           </a>
         </p>
       </div>
     ),
+    defaultOpen: true,
   },
 ]

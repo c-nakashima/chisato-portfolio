@@ -24,6 +24,7 @@ export default function AccordionList({ data, className }: Props) {
           key={index}
           title={item.title}
           content={item.content}
+          defaultOpen={item.defaultOpen}
           className={item.className}
         />
       ))}

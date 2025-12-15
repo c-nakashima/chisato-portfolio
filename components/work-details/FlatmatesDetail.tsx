@@ -1,16 +1,17 @@
 // Data
-import { featuredWorks } from "@/lib/works";
+import { featuredWorks } from '@/lib/works'
 // Components
-import { WorkDetailHero } from "@/components/work-details";
+import { WorkDetailHero } from '@/components/work-details'
 import {
   PersonaSection,
   OverviewSection,
   ProblemStatementSection,
   DesktopResearchSection,
-} from "@/components/work-details/flatmates";
+  UserInterviewSection,
+} from '@/components/work-details/flatmates'
 
 // Basic Data for flatmates
-const flatmateWork = featuredWorks[0];
+const flatmateWork = featuredWorks[0]
 
 export default function FlatmatesDetail() {
   return (
@@ -20,6 +21,7 @@ export default function FlatmatesDetail() {
       <PersonaSection />
       <ProblemStatementSection />
       <DesktopResearchSection />
+      <UserInterviewSection />
     </article>
-  );
+  )
 }

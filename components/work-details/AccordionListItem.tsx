@@ -11,16 +11,21 @@ import { FiChevronDown } from 'react-icons/fi'
 type Props = {
   title: string
   content: React.ReactNode
+  defaultOpen?: boolean
   className?: string
 }
 
 export default function AccordionListItem({
   title,
   content,
+  defaultOpen = false,
   className,
 }: Props) {
   return (
-    <details className="group border border-neutral-100">
+    <details
+      {...(defaultOpen && { open: true })}
+      className="group border border-neutral-100"
+    >
       <summary
         className={`cursor-pointer list-none 
           text-gray-600 bg-neutral-50 leading-snug 

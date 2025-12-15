@@ -1,15 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 // Data
-import { overviewData } from "@/lib/flatmates/overview";
-// Icons
-import { FiExternalLink } from "react-icons/fi";
+import { overviewData } from '@/lib/flatmates/overview'
 // Components
 import {
   SectionLabel,
   BlocLabel,
   OverviewList,
-} from "@/components/work-details";
+} from '@/components/work-details'
 
 /**
  * Overview Section Component
@@ -44,11 +42,13 @@ export default function OverviewSection() {
         <BlocLabel labelText="Target Application" className="mb-4" />
         <Link
           href="https://flatmates.com.au/"
-          className="flex items-baseline font-serif text-2xl underline-offset-1 hover:underline mt-0 mb-2"
+          className="flex items-baseline font-serif text-2xl text-indigo-700 hover:text-indigo-500  underline-offset-1 underline mt-0 mb-2"
           target="_blank"
         >
-          <span className="font-serif text-2xl mr-2">Flatmates.com.au</span>
-          <FiExternalLink size={20} className="pt-1" />
+          <span className="font-serif text-2xl mr-1">Flatmates.com.au</span>
+          <span aria-hidden className="text-base mr-1">
+            ↗
+          </span>{' '}
         </Link>
         <p className="font-sans text-lg font-light mb-5">
           - An application to search Ideal Rooms and Housemates
@@ -56,15 +56,19 @@ export default function OverviewSection() {
         <p className="font-sans font-light">
           “Flatmates.com.au is a peer-to-peer listing platform for those looking
           for shared homes or those looking for a flatmate. It’s easy to use:
-          simply create a listing, search and connect.” ({" "}
-          <Link
+          simply create a listing, search and connect.” (
+          <a
             href="https://flatmates.com.au/info/how-does-it-work"
-            className="hover:underline italic"
+            className="inline-flex items-end gap-1 text-sm text-indigo-700 hover:text-indigo-500 underline italic"
             target="_blank"
+            rel="noopener noreferrer"
           >
             How does it work? - Flatmates.com
-          </Link>
-          )
+            <span aria-hidden className="text-xs mr-1">
+              ↗
+            </span>
+          </a>
+          ){''}
         </p>
       </div>
       <div className="px-4">
@@ -87,5 +91,5 @@ export default function OverviewSection() {
         </figure>
       </div>
     </section>
-  );
+  )
 }

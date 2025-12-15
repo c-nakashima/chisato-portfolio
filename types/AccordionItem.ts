@@ -11,5 +11,6 @@
 export type AccordionItem = {
   title: string
   content: React.ReactNode
+  defaultOpen: boolean
   className?: string
 }

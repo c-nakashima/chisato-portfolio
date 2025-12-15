@@ -1,6 +1,6 @@
-import Image from "next/image";
+import Image from 'next/image'
 // Components
-import { SectionLabel, BlocLabel } from "@/components/work-details/";
+import { SectionLabel, BlocLabel } from '@/components/work-details/'
 
 /**
  * Persona Section Component
@@ -27,7 +27,7 @@ export default function PersonaSection() {
           <p className="font-semibold text-xl mb-2">Megan (24)</p>
           <p className="text-sm font-light">
             Working as an internship at an accounting office in the city /
-            Part-time Master’s student{" "}
+            Part-time Master’s student{' '}
           </p>
         </div>
         <div>
@@ -57,9 +57,9 @@ export default function PersonaSection() {
             </span>
             <BlocLabel labelText="Frastrations" className="mb-4" />
             <p className="font-serif text-xl pl-4 pt-3 mt-0 mb-6">
-              <span className="text-indigo-600">
+              <span className="text-sky-700">
                 The map view changes to the list view automatically
-              </span>{" "}
+              </span>{' '}
               after changing filter search condition
             </p>
           </div>
@@ -73,14 +73,14 @@ export default function PersonaSection() {
               “
             </span>
             <p className="font-serif text-xl pl-4 pt-3 mt-0 mb-6">
-              <span className="text-indigo-600">
+              <span className="text-sky-700">
                 Since I can NOT search the route
-              </span>{" "}
+              </span>{' '}
               I need to open the google map every time
             </p>
           </div>
         </div>
-      </div>{" "}
+      </div>{' '}
     </section>
-  );
+  )
 }
