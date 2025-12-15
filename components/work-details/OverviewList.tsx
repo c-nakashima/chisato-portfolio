@@ -1,30 +1,24 @@
-import React from "react";
+//Data
+import type { OverviewItem } from '@/types'
 // Components
-import { OverviewListItem } from "@/components/work-details";
-
-// OverviewListItemに必要なデータ型を定義
-type OverviewItemData = {
-  labelText: string;
-  content: React.ReactNode;
-  description?: string;
-};
+import { OverviewListItem } from '@/components/work-details'
 
 /**
  * Overview List Component
- *  @property {OverviewItemData[]} data - Data for each list item
+ *  @property { OverviewItem[]} data - Data for each list item
  */
-type OverviewListProps = {
-  data: OverviewItemData[];
-  className?: string;
-};
+type Props = {
+  data: OverviewItem[]
+  className?: string
+}
 
-export default function OverviewList({ data, className }: OverviewListProps) {
+export default function OverviewList({ data, className }: Props) {
   if (!data || data.length === 0) {
-    return null;
+    return null
   }
 
   return (
-    <ul className={`flex flex-row justify-center font-sans ${className || ""}`}>
+    <ul className={`flex flex-row justify-center font-sans ${className || ''}`}>
       {data.map((item) => (
         <OverviewListItem
           key={item.labelText}
@@ -34,5 +28,5 @@ export default function OverviewList({ data, className }: OverviewListProps) {
         />
       ))}
     </ul>
-  );
+  )
 }

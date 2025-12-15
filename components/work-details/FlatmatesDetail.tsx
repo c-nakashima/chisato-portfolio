@@ -6,6 +6,7 @@ import {
   PersonaSection,
   OverviewSection,
   ProblemStatementSection,
+  DesktopResearchSection,
 } from "@/components/work-details/flatmates";
 
 // Basic Data for flatmates
@@ -18,6 +19,7 @@ export default function FlatmatesDetail() {
       <OverviewSection />
       <PersonaSection />
       <ProblemStatementSection />
+      <DesktopResearchSection />
     </article>
   );
 }
