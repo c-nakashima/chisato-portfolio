@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import type { Work } from "@/types/work";
+import Image from 'next/image'
+import Link from 'next/link'
+import type { Work } from '@/types/work'
 
 /**
  * Work Image Card Component
@@ -10,8 +10,8 @@ import type { Work } from "@/types/work";
  * @property {Work} work - single item from featuredWorks item
  */
 type Props = {
-  work: Work;
-};
+  work: Work
+}
 
 export default function WorkCard({ work }: Props) {
   return (
@@ -30,15 +30,16 @@ export default function WorkCard({ work }: Props) {
             className="w-full h-auto object-cover transition-transform duration-200 ease-out group-hover:scale-[1.03]"
           />
 
-          {/* Overlay（hover） */}
+          {/* Overlay（hover <- only for desktop） */}
           <div
             className="
                   absolute inset-0 
                   bg-black/60
-                  opacity-0 
+                  opacity-100
+                  md:opacity-0 
                   transition-opacity 
                   duration-500
-                  group-hover:opacity-100
+                  md:group-hover:opacity-100
                   flex items-center
                 "
           >
@@ -50,7 +51,7 @@ export default function WorkCard({ work }: Props) {
                 {work.title}
               </h3>
               <p className="font-sans text-xs md:text-sm opacity-90">
-                {work.roles.join(" · ")}
+                {work.roles.join(' · ')}
               </p>
               {work.summary && (
                 <p className="font-sans text-xs md:text-sm opacity-80 mt-2">
@@ -73,5 +74,5 @@ export default function WorkCard({ work }: Props) {
               </div> */}
       </Link>
     </article>
-  );
+  )
 }
