@@ -5,7 +5,7 @@ import { ComparisonListItem } from '@/components/work-details'
 
 /**
  * Comparison List Component
- *  @property { ComparisonItem[]} data - Data for each list item
+ *  @property { ComparisonItem[]} pairData - Pair of Data for each list item
  */
 type Props = {
   pairData: insightRecommendationPairItem[]
@@ -22,7 +22,7 @@ export default function ComparisonList({ pairData, className }: Props) {
       {pairData.map((p, index) => (
         <article
           key={index}
-          className={`grid md:grid-cols-2 mb-1 ${className}`}
+          className={`grid md:grid-cols-2 mb-6 md:mb-2 ${className}`}
         >
           <ComparisonListItem
             label={`Insights 0${index + 1}`}
