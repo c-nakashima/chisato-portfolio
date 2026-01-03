@@ -1,6 +1,8 @@
-import Image from "next/image";
+'use client'
+
+import Image from 'next/image'
 // Components
-import { SectionLabel, BlocLabel } from "@/components/work-details";
+import { SectionLabel, BlocLabel } from '@/components/work-details'
 
 /**
  * Problem Statement Section Component
@@ -29,18 +31,32 @@ export default function ProblemStatementSection() {
           reduces the comfortable browsing and comparing.
         </p>
         <figure className="py-10 px-4">
-          <Image
-            src="/flatmates/current-user-flow.png"
-            alt="Detailed Current User Flow"
-            width={500}
-            height={300}
-            className="w-full h-auto object-cover"
-          />
+          <a
+            href="/flatmates/current-user-flow.png"
+            onClick={(e) => {
+              e.preventDefault()
+              window.open(
+                '/flatmates/current-user-flow.png',
+                '_blank',
+                'width=1200,height=800,scrollbars=yes,resizable=yes'
+              )
+            }}
+            className="block cursor-pointer w-full"
+            aria-label="Open Detailed Current User Flow in new window"
+          >
+            <Image
+              src="/flatmates/current-user-flow.png"
+              alt="Detailed Current User Flow"
+              width={500}
+              height={300}
+              className="w-full h-auto object-cover"
+            />
+          </a>
           <figcaption className="sr-only">
             Detailed Current User Flow
           </figcaption>
         </figure>
       </div>
     </section>
-  );
+  )
 }

@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 // Data
 import {
@@ -53,13 +55,27 @@ export default function UserInterviewSection() {
           and gathered common sharing
         </p>
         <figure className="py-10 px-4">
-          <Image
-            src="/flatmates/affinity-mapping.png"
-            alt="Affinity Mapping"
-            width={500}
-            height={300}
-            className="w-full h-auto object-cover"
-          />
+          <a
+            href="/flatmates/affinity-mapping.png"
+            onClick={(e) => {
+              e.preventDefault()
+              window.open(
+                '/flatmates/affinity-mapping.png',
+                '_blank',
+                'width=1200,height=800,scrollbars=yes,resizable=yes'
+              )
+            }}
+            className="block cursor-pointer w-full"
+            aria-label="Open Affinity Mapping in new window"
+          >
+            <Image
+              src="/flatmates/affinity-mapping.png"
+              alt="Affinity Mapping"
+              width={500}
+              height={300}
+              className="w-full h-auto object-cover"
+            />
+          </a>
           <figcaption className="sr-only">Affinity Mapping</figcaption>
         </figure>
       </div>

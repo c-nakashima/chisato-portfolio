@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 // Data
@@ -78,13 +80,27 @@ export default function OverviewSection() {
       <div className="px-4">
         <BlocLabel labelText="Design Process" className="mb-6" />
         <figure className="py-10 px-4">
-          <Image
-            src="/flatmates/design-process.png"
-            alt="Design process: defining the problem, research, interviews..."
-            width={500}
-            height={300}
-            className="w-full h-auto object-cover"
-          />
+          <a
+            href="/flatmates/design-process.png"
+            onClick={(e) => {
+              e.preventDefault()
+              window.open(
+                '/flatmates/design-process.png',
+                '_blank',
+                'width=1200,height=800,scrollbars=yes,resizable=yes'
+              )
+            }}
+            className="block cursor-pointer w-full"
+            aria-label="Open Design Process in new window"
+          >
+            <Image
+              src="/flatmates/design-process.png"
+              alt="Design process: defining the problem, research, interviews..."
+              width={500}
+              height={300}
+              className="w-full h-auto object-cover"
+            />
+          </a>
           <figcaption className="sr-only">
             Design process showing iterative research and prototyping phases
           </figcaption>
