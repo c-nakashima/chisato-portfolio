@@ -23,11 +23,7 @@ import {
 export default function UserInterviewSection() {
   return (
     <section className="w-full max-w-3xl space-y-8 px-4">
-      <SectionLabel
-        number="04"
-        labelText="DESKTOP RESEARCH"
-        className="mb-10"
-      />
+      <SectionLabel number="05" labelText="USER INTERVIEW" className="mb-10" />
       <div className="px-4 pb-4">
         <BlocLabel labelText="Conditions and Questions" className="mb-4" />
         <p className="mt-0 font-serif text-2xl mb-4">
