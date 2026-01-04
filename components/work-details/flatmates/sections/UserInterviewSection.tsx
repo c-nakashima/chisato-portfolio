@@ -75,7 +75,7 @@ export default function UserInterviewSection() {
           <figcaption className="sr-only">Affinity Mapping</figcaption>
         </figure>
       </div>
-      <div>
+      <div className="px-4">
         <BlocLabel labelText="Insights and Recommendations" className="mb-6" />
         <ComparisonList pairData={insightRecommendationPairsData} />
       </div>

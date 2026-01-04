@@ -8,6 +8,8 @@ import {
   ProblemStatementSection,
   DesktopResearchSection,
   UserInterviewSection,
+  ConceptDevelopmentSection,
+  LowFiPrototypingSection,
 } from '@/components/work-details/flatmates'
 
 // Basic Data for flatmates
@@ -22,6 +24,8 @@ export default function FlatmatesDetail() {
       <ProblemStatementSection />
       <DesktopResearchSection />
       <UserInterviewSection />
+      <ConceptDevelopmentSection />
+      <LowFiPrototypingSection />
     </article>
   )
 }
