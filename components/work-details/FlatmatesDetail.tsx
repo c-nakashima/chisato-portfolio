@@ -10,6 +10,7 @@ import {
   UserInterviewSection,
   ConceptDevelopmentSection,
   LowFiPrototypingSection,
+  UserTestingSection,
 } from '@/components/work-details/flatmates'
 
 // Basic Data for flatmates
@@ -26,6 +27,7 @@ export default function FlatmatesDetail() {
       <UserInterviewSection />
       <ConceptDevelopmentSection />
       <LowFiPrototypingSection />
+      <UserTestingSection />
     </article>
   )
 }

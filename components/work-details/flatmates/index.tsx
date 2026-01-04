@@ -6,3 +6,4 @@ export { default as DesktopResearchSection } from './sections/DesktopResearchSec
 export { default as UserInterviewSection } from './sections/UserInterviewSection'
 export { default as ConceptDevelopmentSection } from './sections/ConceptDevelopmentSection'
 export { default as LowFiPrototypingSection } from './sections/LowFiPrototypingSection'
+export { default as UserTestingSection } from './sections/UserTestingSection'
