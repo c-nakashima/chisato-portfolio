@@ -12,7 +12,7 @@ export default function PersonaSection() {
   return (
     <section className="w-full max-w-3xl space-y-8 px-4">
       <SectionLabel number="02" labelText="ASSUMED PERSONA" className="mb-10" />
-      <div className="flex flex-row px-4 gap-8">
+      <div className="flex flex-col md:flex-row px-4 gap-6 md:gap-8">
         <div className="font-sans py-4">
           <figure className="mb-4">
             <Image
@@ -20,14 +20,14 @@ export default function PersonaSection() {
               alt="Design process: defining the problem, research, interviews..."
               width={330}
               height={330}
-              className="min-w-[200] h-auto object-cover"
+              className="w-full max-w-[200px] md:max-w-[330px] h-auto object-cover"
             />
             <figcaption className="sr-only">Persona photo</figcaption>
           </figure>
           <p className="font-semibold text-xl mb-2">Megan (24)</p>
           <p className="text-sm font-light">
             Working as an internship at an accounting office in the city /
-            Part-time Master’s student{' '}
+            Part-time Master&apos;s student{' '}
           </p>
         </div>
         <div>
