@@ -14,7 +14,7 @@ export default function MidFiPrototypingSection() {
   return (
     <section className="w-full max-w-3xl space-y-8 px-4">
       <SectionLabel
-        number="07"
+        number="09"
         labelText="REVISED PROTOTYPING"
         className="mb-10"
       />

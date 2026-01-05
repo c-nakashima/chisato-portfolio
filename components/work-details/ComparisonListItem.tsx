@@ -1,5 +1,8 @@
+'use client'
+
 //Icon
 import { FiChevronDown } from 'react-icons/fi'
+import Image from 'next/image'
 
 /**
  * Comparison List Item Component
@@ -7,6 +10,9 @@ import { FiChevronDown } from 'react-icons/fi'
  *  @property {string} title - Title for each list item
  *  @property {string} content - Content for each list item
  *  @property {string} tailWindColorName - Tailwind's color name for the item's theme
+ *  @property {string} imageSrc - Optional image source path
+ *  @property {string} imageAlt - Optional image alt text
+ *  @property {boolean} isDetailOpen - Whether the details element should be open by default
  */
 type Props = {
   label: string
@@ -14,6 +20,9 @@ type Props = {
   content: React.ReactNode
   tailWindColorName?: string
   className?: string
+  imageSrc?: string
+  imageAlt?: string
+  isDetailOpen?: boolean
 }
 
 export default function ComparisonListItem({
@@ -22,54 +31,60 @@ export default function ComparisonListItem({
   content,
   tailWindColorName = 'slate',
   className,
+  imageSrc,
+  imageAlt,
+  isDetailOpen = false,
 }: Props) {
-  // Tailwindの動的クラス名を完全なクラス名にマッピング
-  const colorClasses = {
-    slate: {
-      bg: 'bg-slate-50',
-      label: 'text-slate-700',
-      summary: 'text-slate-600',
-      details: 'text-slate-800',
-      icon: 'text-slate-500',
-    },
-    lime: {
-      bg: 'bg-lime-50',
-      label: 'text-lime-800',
-      summary: 'text-lime-900',
-      details: 'text-lime-900',
-      icon: 'text-lime-700',
-    },
-    red: {
-      bg: 'bg-red-50',
-      label: 'text-red-700',
-      summary: 'text-red-600',
-      details: 'text-red-800',
-      icon: 'text-red-500',
-    },
-  }
-
-  const colors =
-    colorClasses[tailWindColorName as keyof typeof colorClasses] ||
-    colorClasses.slate
-
   return (
-    <div className={`${colors.bg} p-4 ${className}`}>
-      <p className={`${colors.label} text-sm font-sans font-base mb-4`}>
+    <div className={`bg-${tailWindColorName}-50 p-4 ${className}`}>
+      <p
+        className={`text-${tailWindColorName}-700 text-sm font-sans font-base mb-4`}
+      >
         {label}
       </p>
-      <p className="mt-2 font-serif text-lg font-medium mb-2">{title}</p>
-      <details className="font-sans font-light group">
-        <summary
-          className={`cursor-pointer text-sm ${colors.summary} hover:underline mb-2 flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden`}
-        >
-          <span className={colors.details}>Details</span>
-          <FiChevronDown
-            aria-hidden
-            className={`${colors.icon} transition-transform duration-200 group-open:rotate-180`}
-          />
-        </summary>
-        <div className="pl-5">{content}</div>
-      </details>
+      <div className="mt-2 mb-2 flex flex-col sm:flex-row gap-3 items-start">
+        <div className="flex-1">
+          <p className="font-serif text-lg font-medium">{title}</p>
+          <details
+            className="font-sans font-light group mt-2"
+            {...(isDetailOpen && { open: true })}
+          >
+            <summary
+              className={`cursor-pointer text-sm text-${tailWindColorName}-600 hover:underline mb-2 flex items-center gap-2 list-none [&::-webkit-details-marker]:hidden`}
+            >
+              <span className={`text-${tailWindColorName}-800`}>Details</span>
+              <FiChevronDown
+                aria-hidden
+                className={`text-${tailWindColorName}-500 transition-transform duration-200 group-open:rotate-180`}
+              />
+            </summary>
+            <div className="pl-5">{content}</div>
+          </details>
+        </div>
+        {imageSrc && (
+          <a
+            href={imageSrc}
+            onClick={(e) => {
+              e.preventDefault()
+              window.open(
+                imageSrc,
+                '_blank',
+                'width=1200,height=800,scrollbars=yes,resizable=yes'
+              )
+            }}
+            className="block cursor-pointer w-full sm:w-[45%] sm:flex-shrink-0"
+            aria-label={`Open ${imageAlt || 'image'} in new window`}
+          >
+            <Image
+              src={imageSrc}
+              alt={imageAlt || ''}
+              width={500}
+              height={300}
+              className="w-full h-auto object-cover"
+            />
+          </a>
+        )}
+      </div>
     </div>
   )
 }

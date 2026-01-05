@@ -20,7 +20,7 @@ export default function UserTestingSection() {
   return (
     <section className="w-full max-w-3xl space-y-8 px-4">
       <SectionLabel
-        number="05"
+        number="08"
         labelText="USER TESTING AND INSIGHTS"
         className="mb-10"
       />

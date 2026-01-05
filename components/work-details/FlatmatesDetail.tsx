@@ -13,6 +13,7 @@ import {
   UserTestingSection,
   MidFiPrototypingSection,
 } from '@/components/work-details/flatmates'
+import SummarySection from './flatmates/sections/SummarySection'
 
 // Basic Data for flatmates
 const flatmateWork = featuredWorks[0]
@@ -30,6 +31,7 @@ export default function FlatmatesDetail() {
       <LowFiPrototypingSection />
       <UserTestingSection />
       <MidFiPrototypingSection />
+      <SummarySection />
     </article>
   )
 }
