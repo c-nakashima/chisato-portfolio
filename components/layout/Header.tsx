@@ -33,6 +33,7 @@ export default function Header() {
           <Link href="#works" onClick={handleWorksClick}>
             Works
           </Link>
+          {/* TODO replace with internal link */}
           <a
             href="https://www.linkedin.com/in/chisato-nakashima-134043225/details/skills/"
             target="_blank"
@@ -40,7 +41,14 @@ export default function Header() {
           >
             Skills
           </a>
-          <Link href="/contacts">Contacts</Link>
+          {/* TODO replace with internal link */}
+          <a
+            href="mailto:huomentachisato@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contacts
+          </a>
         </nav>
         {/* Mobile Menu Button */}
         <button
@@ -91,13 +99,15 @@ export default function Header() {
               >
                 Skills
               </a>
-              <Link
-                href="/contacts"
+              <a
+                href="mailto:huomentachisato@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="font-serif text-2xl"
               >
                 Contacts
-              </Link>
+              </a>
             </div>
           </nav>
         </>
