@@ -6,6 +6,14 @@ import {
   DatavisDetail,
   CoffeeFlyerDetail,
 } from "@/components/work-details";
+import { featuredWorks } from "@/lib/works";
+
+// Generate static params for all work slugs
+export async function generateStaticParams() {
+  return featuredWorks.map((work) => ({
+    slug: work.slug,
+  }));
+}
 
 export default async function WorkDetailPage({
   params,
@@ -29,8 +37,7 @@ export default async function WorkDetailPage({
   }
 
   return (
-    <main className="min-h-screen w-fullitems-center sm:items-start">
-      {/* <main className="min-h-screen w-full max-w-3xl items-center justify-between sm:items-start"> */}
+    <main className="min-h-screen w-full items-center sm:items-start">
       {Detail}
     </main>
   );

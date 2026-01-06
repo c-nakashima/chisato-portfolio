@@ -30,7 +30,7 @@ export default function Header() {
         </Link>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-2">
-          <Link href="#works" onClick={handleWorksClick}>
+          <Link href="/#works" onClick={handleWorksClick} prefetch={false}>
             Works
           </Link>
           {/* TODO replace with internal link */}
@@ -84,8 +84,9 @@ export default function Header() {
             </button>
             <div className="flex flex-col gap-8 text-center pointer-events-auto">
               <Link
-                href="#works"
+                href="/#works"
                 onClick={handleWorksClick}
+                prefetch={false}
                 className="font-serif text-2xl"
               >
                 Works

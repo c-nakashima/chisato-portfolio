@@ -18,6 +18,7 @@ import SummarySection from './flatmates/sections/SummarySection'
 // Basic Data for flatmates
 const flatmateWork = featuredWorks[0]
 
+// Flatmates Detail Component
 export default function FlatmatesDetail() {
   return (
     <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 space-y-12">
