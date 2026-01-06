@@ -1,22 +1,22 @@
-// /**
-//  * Section Heading Text Component
-//  *
-//  * @property {string} headingText - Section Heading Text
-//  */
-// type Props = {
-//   headingText: string;
-// };
+import Image from 'next/image'
 
+// Jess Portfolio Detail Component
 export default function JessPortfolioDetail() {
+  const images = Array.from({ length: 5 }, (_, i) => i + 1)
+
   return (
-    <div className="relative mb-16">
-      <h2
-        className="
-    font-serif text-6xl inline-block relative leading-none
-    before:absolute before:left-0 before:bottom-[4px] before:w-full before:h-[1.5px] before:bg-black
-    after:absolute after:left-[-40vw] after:bottom-[4px] after:w-[40vw] after:h-[1.5px] after:bg-black
-  "
-      ></h2>
-    </div>
-  );
+    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 space-y-12 py-12 px-4">
+      {images.map((num) => (
+        <figure key={num} className="w-full max-w-3xl">
+          <Image
+            src={`/tempslide/3-${num}.png`}
+            alt={`Slide ${num}`}
+            width={1200}
+            height={800}
+            className="w-full h-auto object-cover"
+          />
+        </figure>
+      ))}
+    </article>
+  )
 }
