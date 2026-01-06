@@ -12,6 +12,16 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  // Scroll to works section
+  const handleWorksClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const worksSection = document.getElementById('works')
+    if (worksSection) {
+      worksSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className="relative flex justify-center py-4 px-4 md:px-8">
       <div className="flex flex-row md:flex-row justify-between items-center w-full max-w-3xl font-serif text-sm">
@@ -20,7 +30,9 @@ export default function Header() {
         </Link>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-2">
-          <Link href="/works">Works</Link>
+          <Link href="#works" onClick={handleWorksClick}>
+            Works
+          </Link>
           <Link href="/what-i-do">Skills</Link>
           <Link href="/contacts">Contacts</Link>
         </nav>
@@ -38,33 +50,49 @@ export default function Header() {
           )}
         </button>
       </div>
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - Full Screen Overlay */}
       {isMenuOpen && (
-        <nav className="absolute top-full left-0 right-0 bg-white border-t md:hidden z-50   shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
-          <div className="flex flex-col px-4 py-4 gap-4 max-w-3xl mx-auto">
-            <Link
-              href="/works"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-serif text-sm"
+        <>
+          {/* Background Overlay */}
+          <div
+            className="fixed inset-0 bg-black opacity-90 z-40 md:hidden"
+            onClick={toggleMenu}
+            aria-hidden="true"
+          />
+          {/* Menu Content */}
+          <nav className="fixed inset-0 z-50 md:hidden flex flex-col items-center justify-center pointer-events-none">
+            <button
+              onClick={toggleMenu}
+              className="absolute top-4 right-4 p-2 pointer-events-auto"
+              aria-label="Close menu"
             >
-              Works
-            </Link>
-            <Link
-              href="/what-i-do"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-serif text-sm"
-            >
-              Skills
-            </Link>
-            <Link
-              href="/contacts"
-              onClick={() => setIsMenuOpen(false)}
-              className="font-serif text-sm"
-            >
-              Contacts
-            </Link>
-          </div>
-        </nav>
+              <FiX className="text-2xl" />
+            </button>
+            <div className="flex flex-col gap-8 text-center pointer-events-auto">
+              <Link
+                href="#works"
+                onClick={handleWorksClick}
+                className="font-serif text-2xl"
+              >
+                Works
+              </Link>
+              <Link
+                href="/what-i-do"
+                onClick={() => setIsMenuOpen(false)}
+                className="font-serif text-2xl"
+              >
+                Skills
+              </Link>
+              <Link
+                href="/contacts"
+                onClick={() => setIsMenuOpen(false)}
+                className="font-serif text-2xl"
+              >
+                Contacts
+              </Link>
+            </div>
+          </nav>
+        </>
       )}
     </header>
   )
