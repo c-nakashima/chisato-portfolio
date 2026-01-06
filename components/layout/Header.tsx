@@ -33,7 +33,13 @@ export default function Header() {
           <Link href="#works" onClick={handleWorksClick}>
             Works
           </Link>
-          <Link href="/what-i-do">Skills</Link>
+          <a
+            href="https://www.linkedin.com/in/chisato-nakashima-134043225/details/skills/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Skills
+          </a>
           <Link href="/contacts">Contacts</Link>
         </nav>
         {/* Mobile Menu Button */}
@@ -76,13 +82,15 @@ export default function Header() {
               >
                 Works
               </Link>
-              <Link
-                href="/what-i-do"
+              <a
+                href="https://www.linkedin.com/in/chisato-nakashima-134043225/details/skills/"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="font-serif text-2xl"
               >
                 Skills
-              </Link>
+              </a>
               <Link
                 href="/contacts"
                 onClick={() => setIsMenuOpen(false)}
