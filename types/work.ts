@@ -18,6 +18,5 @@ export type Work = {
   subtitle: string;
   roles: string[];
   term: string;
-  summary: string;
   thumbnail: string;
 };

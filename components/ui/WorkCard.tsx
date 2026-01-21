@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import type { Work } from '@/types/work'
+import Image from "next/image";
+import Link from "next/link";
+import type { Work } from "@/types/work";
 
 /**
  * Work Image Card Component
@@ -10,8 +10,8 @@ import type { Work } from '@/types/work'
  * @property {Work} work - single item from featuredWorks item
  */
 type Props = {
-  work: Work
-}
+  work: Work;
+};
 
 export default function WorkCard({ work }: Props) {
   return (
@@ -51,13 +51,8 @@ export default function WorkCard({ work }: Props) {
                 {work.title}
               </h3>
               <p className="font-sans text-xs md:text-sm opacity-90">
-                {work.roles.join(' · ')}
+                {work.roles.join(" · ")}
               </p>
-              {work.summary && (
-                <p className="font-sans text-xs md:text-sm opacity-80 mt-2">
-                  {work.summary}
-                </p>
-              )}
             </div>
           </div>
         </figure>
@@ -74,5 +69,5 @@ export default function WorkCard({ work }: Props) {
               </div> */}
       </Link>
     </article>
-  )
+  );
 }
