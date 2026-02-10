@@ -31,11 +31,6 @@ export default function WorkDetailHero({ featuredWork }: Props) {
             <p className="font-sans text-sm opacity-90">
               {featuredWork.roles.join(' · ')}
             </p>
-            {featuredWork.summary && (
-              <p className="font-sans text-sm opacity-80 mt-2">
-                {featuredWork.summary}
-              </p>
-            )}
           </div>
         </div>
       </figure>
