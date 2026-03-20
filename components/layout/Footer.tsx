@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import Link from "next/link";
+import Link from 'next/link'
 // icons
-import { LuMail } from "react-icons/lu";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { LuMail } from 'react-icons/lu'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 // Footer Component
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
         </Link>
         <div className="flex flex-row gap-4 text-xl">
           <Link
-            href="mailto:chisato@example.com"
+            href="mailto:chisato.nakashima.work@gmail.com"
             aria-label="Email"
             className="hover:opacity-70 transition-opacity"
           >
@@ -51,5 +51,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
