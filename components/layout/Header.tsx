@@ -47,7 +47,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Contacts
+            Contact
           </a>
         </nav>
         {/* Mobile Menu Button */}
@@ -107,7 +107,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className="font-serif text-2xl"
               >
-                Contacts
+                Contact
               </a>
             </div>
           </nav>
