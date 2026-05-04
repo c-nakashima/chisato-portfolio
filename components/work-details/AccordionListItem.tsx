@@ -24,11 +24,11 @@ export default function AccordionListItem({
   return (
     <details
       {...(defaultOpen && { open: true })}
-      className="group border border-neutral-100"
+      className="group border border-neutral-100 dark:border-neutral-700"
     >
       <summary
         className={`cursor-pointer list-none 
-          text-gray-600 bg-neutral-50 leading-snug 
+          text-gray-600 bg-neutral-50 dark:bg-zinc-800 dark:text-neutral-300 leading-snug 
           py-3 px-4 
           font-sans text-sm
           flex justify-between items-center ${className}`}
@@ -45,7 +45,7 @@ export default function AccordionListItem({
           />
         </span>
       </summary>
-      <div className="bg-white text-neutral-700 font-sans text-sm font-light px-6 py-5 space-y-4">
+      <div className="bg-white text-neutral-700 dark:bg-zinc-800 dark:text-neutral-200 font-sans text-sm font-light px-6 py-5 space-y-4">
         {content}
       </div>
     </details>

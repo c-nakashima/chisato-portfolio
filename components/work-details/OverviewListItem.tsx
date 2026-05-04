@@ -23,7 +23,7 @@ export default function OverviewListItem({
       <span className="font-semibold text-sm">{labelText}</span>
       <div className="flex min-h-8 items-center">{content}</div>
       {description && (
-        <span className="text-sm font-light text-neutral-500">
+        <span className="text-sm font-light text-neutral-500 dark:text-neutral-400">
           {description}
         </span>
       )}

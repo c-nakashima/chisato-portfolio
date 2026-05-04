@@ -21,7 +21,7 @@ const flatmateWork = featuredWorks[0]
 // Flatmates Detail Component
 export default function FlatmatesDetail() {
   return (
-    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 space-y-12">
+    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 dark:text-neutral-200 space-y-12">
       <WorkDetailHero featuredWork={flatmateWork} />
       <OverviewSection />
       <PersonaSection />

@@ -12,7 +12,7 @@ export default function Hero() {
             <br />
             Software Engineering
           </h1>
-          <p className="max-w-xl text-base sm:text-lg font-sans font-light text-neutral-700">
+          <p className="max-w-xl text-base sm:text-lg font-sans font-light text-neutral-700 dark:text-neutral-300">
             Bridging UX strategy and frontend development to deliver clear,
             scalable digital experiences.
           </p>

@@ -5,7 +5,7 @@ export default function CoffeeFlyerDetail() {
   const images = Array.from({ length: 8 }, (_, i) => i + 1)
 
   return (
-    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 space-y-12 py-12 px-4">
+    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 dark:text-neutral-200 space-y-12 py-12 px-4">
       {images.map((num) => (
         <figure key={num} className="w-full max-w-3xl">
           <Image

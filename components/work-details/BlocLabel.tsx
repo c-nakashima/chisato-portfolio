@@ -11,7 +11,7 @@ type Props = {
 export default function SectionLabel({ labelText, className }: Props) {
   return (
     <h3
-      className={`font-sans text-2xl font-light text-neutral-500 ${className}`}
+      className={`font-sans text-2xl font-light text-neutral-500 dark:text-neutral-400 ${className}`}
     >
       {labelText}
     </h3>

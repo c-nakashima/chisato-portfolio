@@ -13,7 +13,7 @@ type Props = {
 export default function BlocLabel({ number, labelText, className }: Props) {
   return (
     <h2 className={`text-sm font-sans font-medium duration-150 ${className}`}>
-      <span className="mr-1 text-neutral-400 font-semibold">{number}</span>
+      <span className="mr-1 text-neutral-400 dark:text-neutral-500 font-semibold">{number}</span>
       {labelText}
     </h2>
   );

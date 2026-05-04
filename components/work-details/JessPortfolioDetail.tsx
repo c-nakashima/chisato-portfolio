@@ -5,7 +5,7 @@ export default function JessPortfolioDetail() {
   const images = Array.from({ length: 5 }, (_, i) => i + 1);
 
   return (
-    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 space-y-12 py-12 px-4">
+    <article className="flex justify-center items-center flex-col leading-relaxed text-neutral-800 dark:text-neutral-200 space-y-12 py-12 px-4">
       <p className="font-sans font-light w-full max-w-3xl align-left">
         <a
           href="https://www.jessjaensch.com.au/"

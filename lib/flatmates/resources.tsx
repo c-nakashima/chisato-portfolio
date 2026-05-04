@@ -22,7 +22,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
             September quarter 2008.
           </li>
         </ul>
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           Victoria State Government (2023). Rental report.{' '}
           <a
             href="https://www.dffh.vic.gov.au/publications/past-rental-reports"
@@ -54,7 +54,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
             respectively)
           </li>
         </ul>
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           Victorian Utility Consumption Household Survey .{' '}
           <a
             href="https://www.dffh.vic.gov.au/publications/victorian-utility-consumption-household-surveyt"
@@ -87,7 +87,7 @@ export const desktopResearchWebReviewData: AccordionItem[] = [
           </li>
           <li>😵‍💫 Unreliable</li>
         </ul>
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           Researchd in Reddit, Productreview.com{' '}
           <a
             href="https://docs.google.com/spreadsheets/d/1nHeQITd0MsAimj1lIKM2TzPqrt5fGwoAIt-8cN9OcE4/edit#gid=0"

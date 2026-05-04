@@ -16,7 +16,7 @@ export const userInterviewConditionsData: AccordionItem[] = [
             seeking a part-time job
           </li>
         </ul>
-        <p className="text-sm text-neutral-500">
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
           ※ Tried to recruit local students but they seem to use other app, so
           recruited International students
         </p>

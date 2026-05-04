@@ -21,7 +21,7 @@ export const overviewData: OverviewItem[] = [
   },
   {
     labelText: "Main Tasks",
-    content: <Wrench className="text-3xl text-neutral-700" />,
+    content: <Wrench className="text-3xl text-neutral-700 dark:text-neutral-300" />,
     description: "UX research, Prototyping",
   },
 ];

@@ -35,7 +35,7 @@ export default function DesktopResearchSection() {
           meet their requirement with limited budget
         </p>
         <div className="mt-6 p-2">
-          <h4 className="font-sans text-lg font-light text-neutral-500 mb-4">
+          <h4 className="font-sans text-lg font-light text-neutral-500 dark:text-neutral-400 mb-4">
             Resources
           </h4>
           <AccordionList data={desktopResearchLivingCostData} />
@@ -53,7 +53,7 @@ export default function DesktopResearchSection() {
           unmatched posts
         </p>
         <div className="mt-6 p-2">
-          <h4 className="font-sans text-lg font-light text-neutral-500 mb-4">
+          <h4 className="font-sans text-lg font-light text-neutral-500 dark:text-neutral-400 mb-4">
             Resources
           </h4>
           <AccordionList data={desktopResearchWebReviewData} />

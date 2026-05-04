@@ -14,13 +14,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* 純黒に近い #0a0a0a より、階調が付くダークグレー（コントラストは維持） */
+    --background: #18181b;
+    --foreground: #e4e4e7;
   }
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light dark;
 }
 
 body {

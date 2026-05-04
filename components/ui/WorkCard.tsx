@@ -21,7 +21,7 @@ export default function WorkCard({ work }: Props) {
         className="group block relative focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ink"
       >
         {/* Thumbnail wrapper */}
-        <figure className="relative w-full overflow-hidden bg-neutral-200">
+        <figure className="relative w-full overflow-hidden bg-neutral-200 dark:bg-neutral-800">
           <Image
             src={work.thumbnail}
             alt={work.title}
@@ -60,10 +60,10 @@ export default function WorkCard({ work }: Props) {
         {/* text（optional）
               <div className="mt-4 space-y-1 max-w-3xl">
                 <h3 className="font-serif text-xl md:text-2xl">{work.title}</h3>
-                <p className="text-xs text-neutral-500">
+                <p className="text-xs text-neutral-500 dark:text-neutral-400">
                   {work.term} · {work.roles[0]}
                 </p>
-                <p className="text-sm text-neutral-700 leading-relaxed">
+                <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
                   {work.summary}
                 </p>
               </div> */}
