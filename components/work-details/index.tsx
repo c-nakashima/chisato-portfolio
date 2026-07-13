@@ -3,6 +3,7 @@ export { default as FlatmatesDetail } from './FlatmatesDetail'
 export { default as JessPortfolioDetail } from './JessPortfolioDetail'
 export { default as CoffeeFlyerDetail } from './CoffeeFlyerDetail'
 export { default as DatavisDetail } from './DatavisDetail'
+export { default as SeekDetail } from './SeekDetail'
 
 // Components for Work Detail Pages
 export { default as WorkDetailHero } from './WorkDetailHero'
