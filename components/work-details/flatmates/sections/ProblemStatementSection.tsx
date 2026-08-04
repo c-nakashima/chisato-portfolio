@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
+import Image from "next/image";
 // Components
-import { SectionLabel, BlocLabel } from '@/components/work-details'
+import { SectionLabel, BlocLabel } from "@/components/work-details";
 
 /**
  * Problem Statement Section Component
@@ -27,19 +27,19 @@ export default function ProblemStatementSection() {
       <div className="px-4">
         <BlocLabel labelText="Detailed Current User Flow" className="mb-6" />
         <p className="font-sans font-light">
-          The current user flow requires user too many transitions, which may
-          reduces the comfortable browsing and comparing.
+          The current user flow requires users to navigate through too many
+          screens., which may reduces the comfortable browsing and comparing.
         </p>
         <figure className="py-10 px-4">
           <a
             href="/flatmates/current-user-flow.png"
             onClick={(e) => {
-              e.preventDefault()
+              e.preventDefault();
               window.open(
-                '/flatmates/current-user-flow.png',
-                '_blank',
-                'width=1200,height=800,scrollbars=yes,resizable=yes'
-              )
+                "/flatmates/current-user-flow.png",
+                "_blank",
+                "width=1200,height=800,scrollbars=yes,resizable=yes",
+              );
             }}
             className="block cursor-pointer w-full"
             aria-label="Open Detailed Current User Flow in new window"
@@ -58,5 +58,5 @@ export default function ProblemStatementSection() {
         </figure>
       </div>
     </section>
-  )
+  );
 }

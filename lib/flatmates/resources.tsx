@@ -1,11 +1,11 @@
 // types
-import { AccordionItem } from '@/types'
+import { AccordionItem } from "@/types";
 
 // flatmate's Desktop Research
 // -- Living Cost data
 export const desktopResearchLivingCostData: AccordionItem[] = [
   {
-    title: 'The December quarter 2022 Rental Report',
+    title: "The December quarter 2022 Rental Report",
     content: (
       <div>
         <ul className="list-disc pl-5 space-y-3 mb-4">
@@ -23,7 +23,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
           </li>
         </ul>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          Victoria State Government (2023). Rental report.{' '}
+          Victoria State Government (2023). Rental report.{" "}
           <a
             href="https://www.dffh.vic.gov.au/publications/past-rental-reports"
             target="_blank"
@@ -40,7 +40,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
   },
   {
     title:
-      'Review of the Final Report (March 2016) on the Victorian Household Utility Consumption Survey 2015',
+      "Review of the Final Report (March 2016) on the Victorian Household Utility Consumption Survey 2015",
     content: (
       <div>
         <ul className="list-disc pl-5 space-y-3 mb-4">
@@ -55,7 +55,7 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
           </li>
         </ul>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          Victorian Utility Consumption Household Survey .{' '}
+          Victorian Utility Consumption Household Survey .{" "}
           <a
             href="https://www.dffh.vic.gov.au/publications/victorian-utility-consumption-household-surveyt"
             target="_blank"
@@ -70,12 +70,12 @@ export const desktopResearchLivingCostData: AccordionItem[] = [
     ),
     defaultOpen: false,
   },
-]
+];
 
 // -- Web Review data
 export const desktopResearchWebReviewData: AccordionItem[] = [
   {
-    title: 'Reviews on the Web',
+    title: "Reviews on the Web",
     content: (
       <div>
         <ul className="list-disc pl-5 space-y-3 mb-4">
@@ -88,7 +88,7 @@ export const desktopResearchWebReviewData: AccordionItem[] = [
           <li>😵‍💫 Unreliable</li>
         </ul>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          Researchd in Reddit, Productreview.com{' '}
+          Researched in Reddit, Productreview.com{" "}
           <a
             href="https://docs.google.com/spreadsheets/d/1nHeQITd0MsAimj1lIKM2TzPqrt5fGwoAIt-8cN9OcE4/edit#gid=0"
             target="_blank"
@@ -105,4 +105,4 @@ export const desktopResearchWebReviewData: AccordionItem[] = [
     ),
     defaultOpen: true,
   },
-]
+];

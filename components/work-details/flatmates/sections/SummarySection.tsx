@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 // Components
 import {
   SectionLabel,
   BlocLabel,
   ComparisonListItem,
-} from '@/components/work-details'
+} from "@/components/work-details";
 // // Data
 // import {
 //   desktopResearchLivingCostData,
@@ -23,9 +23,9 @@ export default function SummarySection() {
     <section className="w-full max-w-3xl space-y-8 px-4">
       <SectionLabel number="10" labelText="SUMMARY" className="mb-10" />
       <div className="px-4 pb-4">
-        <BlocLabel labelText="Reccommendations" className="mb-4" />
+        <BlocLabel labelText="Recommendations" className="mb-4" />
         <p className="text-base font-sans font-light mb-4">
-          Recommendations and next steps from this UX resaerch project.
+          Recommendations and next steps from this UX research project.
         </p>
         <div className="py-4 space-y-6">
           <ComparisonListItem
@@ -66,5 +66,5 @@ export default function SummarySection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

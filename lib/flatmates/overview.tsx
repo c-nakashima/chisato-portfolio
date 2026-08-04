@@ -12,7 +12,7 @@ export const overviewData: OverviewItem[] = [
         1.5<span className="text-base ml-1">mo</span>
       </p>
     ),
-    description: "May2023-Apr 2023",
+    description: "Mar 2023 - May 2023",
   },
   {
     labelText: "Member",
@@ -21,7 +21,9 @@ export const overviewData: OverviewItem[] = [
   },
   {
     labelText: "Main Tasks",
-    content: <Wrench className="text-3xl text-neutral-700 dark:text-neutral-300" />,
+    content: (
+      <Wrench className="text-3xl text-neutral-700 dark:text-neutral-300" />
+    ),
     description: "UX research, Prototyping",
   },
 ];
