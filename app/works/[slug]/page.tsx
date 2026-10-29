@@ -1,6 +1,7 @@
 import { JSX } from 'react'
 import { notFound } from 'next/navigation'
 import {
+  BeforeYouGoDetail,
   FlatmatesDetail,
   JessPortfolioDetail,
   DatavisDetail,
@@ -25,6 +26,7 @@ export default async function WorkDetailPage({
 
   // mapping: slug → JSX
   const detailComponents: { [key: string]: JSX.Element } = {
+    beforeyougo: <BeforeYouGoDetail />,
     flatmates: <FlatmatesDetail />,
     datavis: <DatavisDetail />,
     'jess-portfolio': <JessPortfolioDetail />,

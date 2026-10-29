@@ -3,6 +3,14 @@ import type { Work } from '@/types/work'
 // Data for Works Section
 export const featuredWorks: Work[] = [
   {
+    slug: 'beforeyougo',
+    title: 'Personal Project: BeforeYouGo',
+    subtitle: 'A Reusable Checklist App',
+    roles: ['Design', 'Frontend/API Development'],
+    term: 'Jul 2026 - WIP',
+    thumbnail: '/work-thumbnails/beforeyougo.jpg',
+  },
+  {
     slug: 'flatmates',
     title: 'UX Case Study: Flatmates Revised Prototype',
     subtitle: 'RMIT Online presentation work',

@@ -28,7 +28,7 @@ export default function ProblemStatementSection() {
         <BlocLabel labelText="Detailed Current User Flow" className="mb-6" />
         <p className="font-sans font-light">
           The current user flow requires users to navigate through too many
-          screens., which may reduces the comfortable browsing and comparing.
+          screens, which may reduces the comfortable browsing and comparing.
         </p>
         <figure className="py-10 px-4">
           <a

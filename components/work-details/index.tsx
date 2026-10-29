@@ -1,4 +1,5 @@
 // Deatail Components
+export { default as BeforeYouGoDetail } from './BeforeYouGoDetail'
 export { default as FlatmatesDetail } from './FlatmatesDetail'
 export { default as JessPortfolioDetail } from './JessPortfolioDetail'
 export { default as CoffeeFlyerDetail } from './CoffeeFlyerDetail'
